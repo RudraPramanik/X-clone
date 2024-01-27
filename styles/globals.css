@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+/* initial setup */
+
 :root {
   @apply h-full bg-black
 }
