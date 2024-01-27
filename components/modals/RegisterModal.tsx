@@ -87,6 +87,7 @@ const RegisterModal = () => {
     </div>
   )
 
+  // if the user loggedin or not
   const footerContent = (
     <div className="text-neutral-400 text-center mt-4">
       <p>Already have an account?
