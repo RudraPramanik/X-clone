@@ -20,6 +20,7 @@ const RegisterModal = () => {
 
   const [isLoading, setIsLoading] = useState(false);
 
+  //if user have already registered
   const onToggle = useCallback(() => {
     if (isLoading) {
       return;

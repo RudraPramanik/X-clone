@@ -3,7 +3,15 @@
 package used:
 react-icon
 zustand
+prisma -npm install -d prisma(run: npx prisma init)
+#for database run npx prisma db push
 
+
+
+# Authentication login register controller
+
+npm i @prisma/client
+create libs/
 
 
 This is a repository for a FullStack Twitter clone tutorial using React, NextJS, TailwindCSS & Prisma.
@@ -64,3 +72,5 @@ Running commands with npm `npm run [command]`
 
 self learn:
 41-modal
+107- mongodbatlas
+114- prisma
