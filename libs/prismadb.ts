@@ -1,6 +1,5 @@
 import { PrismaClient } from "@prisma/client"
 
-//not instance by hot reload, prevent creating repeated prisma
 declare global {
   var prisma: PrismaClient | undefined
 }

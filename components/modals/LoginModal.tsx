@@ -16,8 +16,6 @@ const LoginModal = () => {
   const [password, setPassword] = useState('');
   const [isLoading, setIsLoading] = useState(false);
 
-
-  //login & register
   const onSubmit = useCallback(async () => {
     try {
       setIsLoading(true);
@@ -28,14 +26,14 @@ const LoginModal = () => {
       });
 
       toast.success('Logged in');
-//close modal
+
       loginModal.onClose();
     } catch (error) {
       toast.error('Something went wrong');
     } finally {
       setIsLoading(false);
     }
-  }, [email, password, loginModal]); //dependency of the useCallback
+  }, [email, password, loginModal]);
 
   const onToggle = useCallback(() => {
     loginModal.onClose();
@@ -81,7 +79,7 @@ const LoginModal = () => {
       isOpen={loginModal.isOpen}
       title="Login"
       actionLabel="Sign in"
-      onClose={loginModal.onClose} //sending onclose to modal component from zustand
+      onClose={loginModal.onClose}
       onSubmit={onSubmit}
       body={bodyContent}
       footer={footerContent}

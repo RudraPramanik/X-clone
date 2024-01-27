@@ -39,11 +39,9 @@ model Post {
   userId             String @db.ObjectId
   likedIds           String[] @db.ObjectId
   image              String?
-//user relation reference to user id,user id having the post, 
 
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
-//user have relation with comment , user also have rel with comment
   comments          Comment[]
 }
 
@@ -64,7 +62,6 @@ model Notification {
   body               String
   userId             String @db.ObjectId
   createdAt          DateTime @default(now())
-
 
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 }

@@ -6,7 +6,6 @@ interface LoginModalStore {
   onClose: () => void;
 }
 
-//modal close open
 const useLoginModal = create<LoginModalStore>((set) => ({
   isOpen: false,
   onOpen: () => set({ isOpen: true }),

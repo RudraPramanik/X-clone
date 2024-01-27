@@ -12,7 +12,17 @@ prisma -npm install -d prisma(run: npx prisma init)
 
 npm i @prisma/client
 create libs/
+npm i brypt
+npm i -d @types/bcrypt
+npm i next/auth
+npm i @next-auth/prisma-adapter
+npm i swr
+npm i axios
 
+
+
+front end integration
+npm i react-hot-toast
 
 This is a repository for a FullStack Twitter clone tutorial using React, NextJS, TailwindCSS & Prisma.
 

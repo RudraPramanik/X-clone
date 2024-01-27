@@ -20,7 +20,6 @@ const RegisterModal = () => {
 
   const [isLoading, setIsLoading] = useState(false);
 
-  //if user have already registered
   const onToggle = useCallback(() => {
     if (isLoading) {
       return;
@@ -88,7 +87,6 @@ const RegisterModal = () => {
     </div>
   )
 
-  // if the user loggedin or not
   const footerContent = (
     <div className="text-neutral-400 text-center mt-4">
       <p>Already have an account?

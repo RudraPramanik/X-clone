@@ -8,7 +8,6 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     <div className="h-screen bg-black">
       <div className="container h-full mx-auto xl:px-30 max-w-6xl">
         <div className="grid grid-cols-4 h-full">
-          {/* left side bar */}
           <Sidebar />
           <div 
             className="
