@@ -32,7 +32,7 @@ const CommentItem: React.FC<CommentItemProps> = ({ data = {} }) => {
         border-neutral-800 
         p-5 
         cursor-pointer 
-        hover:bg-neutral-900 
+        hover:bg-[#65118c]
         transition
       ">
       <div className="flex flex-row items-start gap-3">
