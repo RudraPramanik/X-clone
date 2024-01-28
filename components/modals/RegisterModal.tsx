@@ -9,7 +9,13 @@ import useRegisterModal from "@/hooks/useRegisterModal";
 import Input from "../Input";
 import Modal from "../Modal";
 
-const RegisterModal = () => {
+
+
+interface RegisterModalProps {
+  // Define any props if needed
+}
+
+const RegisterModal: React.FC<RegisterModalProps> = () => {
   const loginModal = useLoginModal();
   const registerModal = useRegisterModal();
 
