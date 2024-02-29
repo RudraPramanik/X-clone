@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import { BsTwitter } from "react-icons/bs";
+import { BsInfinity } from "react-icons/bs";
 
 const SidebarLogo = () => {
   const router = useRouter();
@@ -15,11 +15,11 @@ const SidebarLogo = () => {
         flex 
         items-center 
         justify-center 
-        hover:bg-blue-300 
+        hover:bg-purple-300 
         hover:bg-opacity-10 
         cursor-pointer
     ">
-      <BsTwitter size={28} color="white" />
+      <BsInfinity size={28} color="white" />
     </div>
   );
 };

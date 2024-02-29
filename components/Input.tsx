@@ -21,9 +21,9 @@ const Input: React.FC<InputProps> = ({ placeholder, value, type = "text", onChan
           w-full
           p-4 
           text-lg 
-          bg-black 
+          bg-[#65118c]
           border-2
-          border-neutral-800 
+          border-gray-100 
           rounded-md
           outline-none
           text-white

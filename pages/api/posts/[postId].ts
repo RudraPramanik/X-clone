@@ -14,6 +14,10 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       throw new Error('Invalid ID');
     }
 
+    // const post = await prisma.post.findUnique({
+    //   where: {
+    //     id: postId,
+    //   },
     const post = await prisma.post.findUnique({
       where: {
         id: postId,
